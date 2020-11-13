@@ -9,9 +9,7 @@ function preset(context, options = {}) {
   const browserConfig = {
     useBuiltIns: false,
     targets: {
-      browsers: PRODUCTION
-        ? [`last 4 versions`, `safari >= 7`, "ie >= 9"]
-        : [`last 2 versions`, `not ie <= 11`, `not android 4.4.3`],
+      browsers: [">0.25%", "not dead"],
       uglify: PRODUCTION,
     },
   }
