@@ -45,7 +45,7 @@ exports.sourceNodes = function () {
                 parent: "__SOURCE__",
                 children: [],
                 internal: {
-                  type: _.camelCase(`googleSheet ${worksheetTitle} row`),
+                  type: _.camelCase(`googleSheetRows`),
                   contentDigest: crypto.createHash("md5").update(JSON.stringify(r)).digest("hex")
                 }
               }));
